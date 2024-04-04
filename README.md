@@ -3,7 +3,7 @@ ICal generator/updater/parser with Timezone/DST, Alams, Organizers, Events, etc.
 
 100% JavaScript implementation.
 
-[![NPM](https://nodei.co/npm/ical-toolkit.png?downloads=true)](https://nodei.co/npm/ical-toolkit/)
+[![NPM](https://nodei.co/npm/ical-toolkit.png?downloads=true)](https://nodei.co/npm/@denzorn/ical-toolkit/)
 
 Ical **generator** supports the following:
 * VTIMEZONE - TIMEZONE/DST info. We have inbuilt timezone database, you just specify TimeZone ID and rest module will take care.
@@ -18,7 +18,7 @@ Ical **generator** supports the following:
  
 ##Install
 ```bash
-> npm install ical-toolkit
+> npm install @denzorn/ical-toolkit
 ```
 
 ##Builder
@@ -148,7 +148,8 @@ builder.events.push({
     freq: 'DAILY',
     count: 10,
     interval: 10,
-    until: new Date()
+    until: new Date(),
+    byday: 'mo,tu,we,th,fr'
   },
   
   //Optional if all day event
